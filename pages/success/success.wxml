@@ -1,0 +1,16 @@
+<!--pages/success/success.wxml-->
+<view class="myicon">
+  <icon type="success" size="50"/>
+</view>
+<view  class="txt">
+  <text>{{text}}</text>
+</view>
+<view class="mybutton">
+  <button form-type="submit" bindtap="last" class="last">
+    <text class="btntxt">返回上一个页面</text>
+  </button>
+  <button form-type="submit" bindtap="menu" class="menu">
+    <image class="btnimg" src='../../img/icon1.png'></image>
+    <text class="btntxt">返回首页</text>
+    </button>
+</view>

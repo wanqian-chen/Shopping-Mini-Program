@@ -1,0 +1,127 @@
+/* pages/merchandise/merchandise.wxss */
+
+/*商品展示外部样式*/
+.demo-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30rpx;
+  background-color: antiquewhite;
+}
+.goods-box {
+  width: 49%;
+  margin-bottom: 20rpx;
+}
+/*商品内容样式*/
+.goods-pic {
+  width: 220rpx;
+  height: 250rpx;
+  margin: 0 auto;
+  display: block;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+/*看相似样式*/
+.goods-btn {
+  border: 1px solid #fd0000;
+  border-radius: 40rpx;
+  background-color: #fd0000;
+  margin-top: 20rpx;
+  height: 40rpx;
+  width: 40rpx;
+  line-height: 35rpx;
+  font-size: 40rpx;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+/*商品标题样式*/
+.goods-title {
+  font-size: 30rpx;
+  font-weight: 600;
+  text-align: center;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.goods-titleTwo {
+  font-size: 24rpx;
+  margin-top: 10rpx;
+  text-align: center;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+/*商品价格样式*/
+.goods-price {
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  color: #ee3b3b;
+}
+
+.myhover {
+  opacity: 0.9;
+  transform: scale(0.95, 0.95);
+  position: relative;
+  top: 3rpx;
+  left: 3rpx;
+  box-shadow:0px 0px 19rpx rgba(0, 0, 0, .1) inset; 
+ }
+
+ .buttonhover {
+  opacity: 0.9;
+  transform: scale(0.95, 0.95);
+  position: relative;
+  top: 3rpx;
+  left: 3rpx;
+ }
+
+ .topswiper {
+  height: 355rpx;
+  width: 100%;
+  top: 0;
+  background-color:antiquewhite;
+}
+
+.imgswiper {
+  height: 295rpx;
+  width: 100%;
+}
+
+button {
+  background-color: #fd0000;
+  color: #ffffff;
+}
+
+.turn {
+  background-color:antiquewhite;
+  padding-bottom: 40rpx;
+}
+
+.btnimg {
+  width: 70rpx;
+  height: 70rpx;
+  padding-right: 60rpx;
+}
+
+.btntxt {
+  font-size: 35rpx;
+}
+
+.cartbtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,44 @@
+<!--pages/register/register.wxml-->
+<view class="all">
+  <view class="demo-box">
+    <view class="title">用户注册</view>
+    <form bindsubmit="onSubmit" bindreset="onReset">
+      <view class="getinfo">
+        <text>用户名:</text>
+        <view class="inputform"><input name="username" type="text" placeholder="请输入你的用户名" value="{{setMessagename}}" class="inputinfo"  bindinput="bindinputname"></input></view>
+      </view>
+      <view class="getinfo">
+        <text>密码:</text>
+        <view class="inputform"><input name="password" type="password" placeholder="请输入你的密码" value="{{setMessagepswd}}" class="inputinfo"  bindinput="bindinputpswd"></input></view>
+      </view>
+      <view class="getinfo">
+        <text>手机号:</text>
+        <view class="inputform"><input name="phonenumber" type="text" placeholder="请输入你的手机号" value="{{setMessagephone}}" class="inputinfo"  bindinput="bindinputphone"></input></view>
+      </view>
+      <view class="getinfo">
+        <text>常用地址:</text>
+        <view class="inputform"><input name="address" type="text" placeholder="请输入你的常用地址" value="{{setMessageaddress}}" class="inputinfo"  bindinput="bindinputaddress"></input></view>
+      </view>
+
+      <text>注册日期（选填）:</text>
+      <view class="choice">{{date}}</view>
+      <picker-view value="{{value}}" bindchange="pickerviewChange">
+        <picker-view-column>
+          <view wx:for="{{year}}">{{item}}</view>
+        </picker-view-column>
+        <picker-view-column>
+          <view wx:for="{{month}}">{{item}}</view>
+        </picker-view-column>
+        <picker-view-column>
+          <view wx:for="{{day}}">{{item}}</view>
+        </picker-view-column>
+      </picker-view>
+
+      <view class="mybutton">
+        <button bindtap="check">检查</button>
+        <button form-type="submit">注册</button>
+        <button form-type="reset" id="resetbtn">重置</button>
+      </view>
+    </form>
+  </view>
+</view>

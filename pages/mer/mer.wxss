@@ -1,0 +1,72 @@
+/* pages/mer/mer.wxss */
+.detailtext{
+  margin: 7px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.detailtexttwo{
+  margin: 10px;
+  font-weight: 300;
+  font-size: 12px;
+  color: #43cac3f6;
+}
+
+.good-price{
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #ee3b3b;
+}
+
+.paraTitle{
+  border-top: 2px dotted #44b4ff;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  padding-top: 15px;
+  font-size: 13px;
+  text-align: center;
+  color:#4b4b4bf6;
+}
+
+.parameter{
+  font-size: 10px;
+  padding: 10px;
+  color:#b1b1b1f6;
+}
+
+.goods-btn {
+  border: 1px solid #fd0000;
+  border-radius: 40rpx;
+  background-color: #fd0000;
+  height: 40rpx;
+  width: 40rpx;
+  line-height: 30rpx;
+  font-size: 40rpx;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  display: inline;
+  float: right;
+  margin-right: 10px;
+}
+
+swiper {
+  height: 600rpx;
+  width: 100%;
+}
+
+.imgswiper {
+  width: 100%;
+}
+
+.buttonhover {
+  opacity: 0.9;
+  transform: scale(0.95, 0.95);
+  position: relative;
+  top: 3rpx;
+  left: 3rpx;
+  box-shadow:0px 0px 8px rgba(0, 0, 0, .1) inset; 
+ }

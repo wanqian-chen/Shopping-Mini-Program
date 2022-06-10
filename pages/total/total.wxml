@@ -1,0 +1,7 @@
+<!--pages/total/total.wxml-->
+<view class="myicon">
+  <icon type="success" size="50"/>
+</view>
+<view  class="txt">
+  <text>已支付￥{{total}}</text>
+</view>

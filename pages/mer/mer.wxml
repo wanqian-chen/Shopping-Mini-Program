@@ -1,0 +1,26 @@
+<!--pages/mer/mer.wxml-->
+<view>
+  <swiper indicator-dots autoplay interval="3000">
+    <swiper-item  wx:for="{{img}}" wx:for-item="image">
+      <image src="{{image}}" mode="aspectFit"  class="imgswiper"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="detailtext">
+  <text>{{title}}</text>
+</view>
+<view class="detailtexttwo">
+  <text>{{titleTwo}}</text>
+</view>
+<view class="good-price">
+  <text>￥{{price}}</text>
+</view>
+<view class="goods-btn" hover-class="buttonhover">
+  <text bindtap="addmer" data-id="{{id}}">+</text>
+</view>
+<view class="paraTitle">
+  <text>产品参数</text>
+</view>
+<view class="parameter">
+  <text>{{detail}}</text>
+</view>

@@ -1,0 +1,18 @@
+<!--pages/topup/topup.wxml-->
+<view class="demo-box">
+  <view id="now">
+    现有余额：￥{{balance}}
+  </view>
+  <form bindsubmit="onSubmit" bindreset="onReset">
+  <view>
+    <view id="inputmoney">
+    <text>请填写充值金额:</text>
+    <input name="addbalance" placeholder="充值金额" value="{{setMessage}}"></input>
+    </view>
+
+    <view class="mybutton">
+      <button form-type="submit">充值</button>
+    </view>
+  </view>
+  </form>
+</view>

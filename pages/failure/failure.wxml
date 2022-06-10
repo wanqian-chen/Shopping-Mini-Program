@@ -1,0 +1,12 @@
+<!--pages/failure/failure.wxml-->
+<view class="myicon">
+  <icon type="warn" size="50"/>
+</view>
+<view  class="txt">
+  <text>{{text}}</text>
+</view>
+<view class="mybutton">
+  <button form-type="submit" bindtap="topup" class="topup">
+    <text class="btntxt">前往充值</text>
+  </button>
+</view>

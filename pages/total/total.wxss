@@ -1,0 +1,12 @@
+/* pages/total/total.wxss */
+.myicon {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

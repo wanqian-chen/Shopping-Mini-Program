@@ -1,0 +1,50 @@
+/* pages/failure/failure.wxss */
+.myicon {
+  margin: 120rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mybutton{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 350rpx;
+  padding: 48rpx;
+}
+
+button::after{ 
+	border: none; 
+}
+
+button {
+  margin-top: 24rpx;
+  border-radius: 67rpx;
+  height: 67rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.btnimg {
+  margin-right: 8rpx;
+  width: 46rpx;
+  height: 46rpx;
+  padding-right: 18rpx;
+}
+
+.btntxt {
+  font-size: 27rpx;
+}
+
+.topup {
+  background-color: rgb(255, 153, 0);
+}

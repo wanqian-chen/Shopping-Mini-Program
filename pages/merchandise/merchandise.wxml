@@ -1,0 +1,35 @@
+<!--pages/merchandise/merchandise.wxml-->
+<!--商品展示部分-->
+<view class="topswiper">
+  <swiper indicator-dots autoplay interval="3000">
+    <swiper-item>
+      <image src="https://gdp.alicdn.com/imgextra/i4/1097280647/O1CN01hfDgYx1GeMvc2iYDF_!!1097280647.jpg" mode="scaleToFill" class="imgswiper"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://gdp.alicdn.com/imgextra/i1/2510050218/O1CN01O1THAT1DTt1hAKilJ_!!2510050218.jpg" mode="scaleToFill" class="imgswiper"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="demo-box">
+  <block wx:for="{{goodsdata}}" wx:for-item="item">
+  <view class="goods-box">
+    <view hover-class="myhover" bindtap="btntodetail" data-id="{{item.id}}">
+      <image class="goods-pic" src="{{item.image[0]}}" style="width: 120px; height: 120px" bindtap="detail" data-detail="{{item.detail}}"></image>
+      <view class="goods-title">{{item.title}}</view>
+      <view class="goods-titleTwo">{{item.titleTwo}}</view>
+    </view>
+    <view class="row" hover-class="buttonhover">
+        <view class="goods-price">￥{{item.price}}</view>
+        <text class="goods-btn" bindtap="addmer" data-price="{{item.price}}" data-id="{{item.id}}">+</text>
+    </view>
+  </view>
+  </block>
+</view>
+<view class="turn">
+  <button bindtap="goToCart">
+    <view class="cartbtn">
+      <image class="btnimg" src='../../img/shopping.png'></image>
+      <text class="btntxt">购物车</text>
+    </view>
+  </button>
+</view>

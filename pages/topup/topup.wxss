@@ -1,0 +1,44 @@
+/* pages/topup/topup.wxss */
+/* pages/register/register.wxss */
+button {
+  margin-top: 20rpx;
+}
+
+text {
+  font-size: 48rpx;
+}
+
+.demo-box {
+  height: 100vh;
+  padding-top: 165rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 205, 129);
+}
+
+view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#now {
+  padding-bottom: 150rpx;
+}
+
+#inputmoney {
+  padding-bottom: 100rpx;
+}
+
+.mybutton{
+  margin-top: 165rpx;
+}
+
+input {
+  margin-top: 48rpx;
+  border: 4rpx solid black;
+  border-radius: 120rpx;
+  width: 190rpx;
+  text-align: center;
+}
